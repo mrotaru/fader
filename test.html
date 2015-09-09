@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fader</title>
+    <style>
+      html, body, .fader {
+        height: 100%;
+      }
+      .fader ul {
+          position: relative;
+      }
+      .fader img {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fader">
+      <ul>
+        <li><img src="http://placehold.it/500x500/220022?text=1"></li>
+        <li><img src="http://placehold.it/500x500/002200?text=2"></li>
+        <li><img src="http://placehold.it/500x500/0000FF?text=3"></li>
+      </ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+    <script src="./jquery.fader.js"></script>
+    <script>
+      $(function(){
+        $(".fader").fader({
+          delay: 2000
+        })
+      });
+    </script>
+  </body>
+</html>
